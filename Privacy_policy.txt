@@ -1,0 +1,53 @@
+# Privacy Policy for Sinfinia
+
+**Effective Date:** November 12, 2026  
+**Developer:** Sinfinia
+**Contact:** [emre@emrekirci.com]
+
+Sinfinia ("we", "our", or "the App") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how Sinfinia handles data when you use our iOS and iPadOS application.
+
+## 1. Overview
+Sinfinia is a multi-modal financial intelligence tool designed to analyze user-captured charts, financial queries, macroeconomic indicators, and market news. Sinfinia **does not require user registration or account creation**, **does not display third-party advertisements**, and **does not use cross-app tracking or third-party advertising SDKs**.
+
+## 2. Information We Access and How It Is Used
+
+### A. Camera & Photo Library Access
+- **Live Chart Scanning:** If you grant Camera permission, Sinfinia uses your camera only when you actively capture a chart, terminal screen, or financial document for analysis.
+- **Photo Library & Ray-Ban Meta Autopilot:** If you grant Photo Library permission, you can manually select images for analysis or enable Ray-Ban Meta Autopilot to monitor newly saved photos (including captures synced via Meta View).
+- **On-Device Pre-Filtering:** Before any auto-synced image is transmitted, Sinfinia runs an on-device Apple Vision / Neural Engine pre-filter locally on your device to identify financial charts and ignore personal photos (such as people, pets, or unrelated scenes). Personal photos filtered out on-device are never uploaded.
+- **Image Optimization:** Images selected or approved for analysis are resized locally on your device (up to 1024px) before transmission to the configured analysis server.
+
+### B. Microphone & Siri / App Intents
+- If you grant Microphone permission or invoke Siri shortcuts ("Hey Siri"), voice audio is processed via Apple's system frameworks solely to interpret your market query or trigger requested App Intents. Sinfinia does not record background audio.
+
+### C. Text Queries & Analysis Requests
+- Text prompts, news headlines, and chart images you choose to analyze are sent to the configured Sinfinia analysis backend (the default Sinfinia API server or a custom server endpoint configured by you in Settings) solely to generate OCR text, directional verdicts, confidence scores, and historical RAG comparisons.
+
+### D. Speech Synthesis & Notifications
+- **On-Device Audio Briefings:** Veteran Whisper audio briefings are generated locally on your device using Apple's speech synthesis engine (`AVSpeechSynthesizer`) without sending audio to external voice services.
+- **Local Notifications:** If you grant Notification permission, Sinfinia schedules local notifications on your device to alert you when an analysis completes or when qualifying market events occur.
+
+## 3. Local Data Storage on Your Device
+Sinfinia stores the following information **locally on your device**:
+- Your saved analysis history (`sinfinia_history.json`) and locally cached analysis chart images.
+- App preferences (`UserDefaults`), including your configured server endpoint URL, API key, onboarding status, and the timestamp when you accepted the mandatory Financial Risk Disclaimer.
+
+You can clear your stored analysis history or adjust your server endpoint at any time inside the App, or delete all local app data by uninstalling Sinfinia.
+
+## 4. Third-Party Data Sources & Backend Infrastructure
+- To provide macroeconomic context, market signals, and news summaries, Sinfinia retrieves aggregated financial data and public indicators (such as FRED macroeconomic metrics) through the configured backend API.
+- We do **not** sell, rent, or trade your personal data, photos, or queries to third parties, data brokers, or advertisers.
+
+## 5. Data Retention & Security
+- Submitted chart images and text queries are processed transiently to return your requested analysis report and are not used to build personal advertising profiles.
+- Because Sinfinia allows you to specify a custom server URL in Settings, you are responsible for verifying the security and privacy practices of any custom endpoint you configure.
+
+## 6. Children's Privacy
+Sinfinia is intended for adult financial research and informational use and is not directed at children under 13 (or the applicable minimum age in your jurisdiction). We do not knowingly collect personal information from children.
+
+## 7. Changes to This Privacy Policy
+We may update this Privacy Policy from time to time. Any updates will be reflected by updating the "Effective Date" at the top of this page.
+
+## 8. Contact Us
+If you have questions about this Privacy Policy or your data, please contact us at:  
+**[emre@emrekirci.com]**
